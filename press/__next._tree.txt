@@ -1,0 +1,4 @@
+:HL["/y2026/_next/static/chunks/a170b51f02a27c68.css","style"]
+:HL["/y2026/_next/static/chunks/9d4fa4c7cdd071d1.css","style"]
+:HL["https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700&display=swap","style"]
+0:{"buildId":"hMq3avfM5pXtnOSeAUpGY","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"press","paramType":null,"paramKey":"press","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
