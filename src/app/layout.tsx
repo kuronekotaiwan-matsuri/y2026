@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/common/Header/Header";
 import Footer from "@/components/common/Footer/Footer";
+
+/** Google Analytics 測定ID */
+const GA_ID = "G-5JW9C3WY72";
 
 // メタデータの定義（SEO・OGP対応）
 export const metadata: Metadata = {
@@ -30,6 +34,20 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <head>
+        {/* Google Analytics */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_ID}');
+          `}
+        </Script>
+
         {/* Google Fonts: Zen Maru Gothic の読み込み */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
