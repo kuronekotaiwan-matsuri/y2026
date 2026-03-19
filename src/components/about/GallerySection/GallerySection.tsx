@@ -14,27 +14,27 @@ interface GalleryImage {
 /** ギャラリー画像一覧: 過去の開催風景のプレースホルダー */
 const galleryImages: GalleryImage[] = [
   {
-    src: '/images/gallery-1.jpg',
+    src: '/y2026/images/gallery-1.jpg',
     alt: '2025年黒猫台湾まつりの会場風景',
   },
   {
-    src: '/images/gallery-2.jpg',
+    src: '/y2026/images/gallery-2.jpg',
     alt: '台湾グルメブースの様子',
   },
   {
-    src: '/images/gallery-3.jpg',
+    src: '/y2026/images/gallery-3.jpg',
     alt: 'ワークショップ体験の風景',
   },
   {
-    src: '/images/gallery-4.jpg',
+    src: '/y2026/images/gallery-4.jpg',
     alt: 'ステージイベントの様子',
   },
   {
-    src: '/images/gallery-5.jpg',
+    src: '/y2026/images/gallery-5.jpg',
     alt: '来場者で賑わう会場の風景',
   },
   {
-    src: '/images/gallery-6.jpg',
+    src: '/y2026/images/gallery-6.jpg',
     alt: '台湾雑貨の物販ブースの様子',
   },
 ];

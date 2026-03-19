@@ -12,21 +12,21 @@ const FEATURES = [
     title: '台湾グルメを味わう',
     description:
       '台湾の本格的な味を楽しめる飲食ブース。小籠包、魯肉飯、タピオカミルクティーなど、本場の味をお届けします。',
-    image: '/images/feature-food.jpg',
+    image: '/y2026/images/feature-food.jpg',
     imageAlt: '台湾グルメの飲食ブースの様子',
   },
   {
     title: '台湾文化を体験する',
     description:
       'ワークショップやステージで台湾文化を体験。台湾結びや花文字など、楽しいハンズオンプログラムが盛りだくさん。',
-    image: '/images/feature-culture.jpg',
+    image: '/y2026/images/feature-culture.jpg',
     imageAlt: '台湾文化のワークショップ体験の様子',
   },
   {
     title: 'まちを元気にする',
     description:
       '大山街道の商店街と連携した地域のお祭り。世代や国籍を超えた交流を生み出します。',
-    image: '/images/feature-community.png',
+    image: '/y2026/images/feature-community.png',
     imageAlt: '地域交流イベントの様子',
   },
 ] as const;

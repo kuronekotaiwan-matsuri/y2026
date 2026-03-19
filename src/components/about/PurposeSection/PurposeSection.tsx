@@ -19,21 +19,21 @@ const themes: ThemeItem[] = [
     title: '町おこしの一環として',
     description:
       '川崎市高津区の大山街道沿いの地域活性化。商店街と連携し、地元経済の発展を目指しています。',
-    image: '/images/purpose-town.jpg',
+    image: '/y2026/images/purpose-town.jpg',
     imageAlt: '町おこし・地域活性化のイメージ',
   },
   {
     title: '台湾文化の発信',
     description:
       '台湾の食文化、工芸、音楽などを通じて、日本と台湾の交流を深めます。伝統食文化、工芸、言語、音楽の体験を提供します。',
-    image: '/images/purpose-taiwan.jpg',
+    image: '/y2026/images/purpose-taiwan.jpg',
     imageAlt: '台湾文化の発信イメージ',
   },
   {
     title: '地域交流の場',
     description:
       '世代や国籍を超えた交流を生み出します。ワークショップやライブパフォーマンスを通じた相互理解の深化を目指します。',
-    image: '/images/purpose-community.jpg',
+    image: '/y2026/images/purpose-community.jpg',
     imageAlt: '地域交流の場のイメージ',
   },
 ];

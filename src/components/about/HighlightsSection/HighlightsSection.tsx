@@ -20,21 +20,21 @@ const highlights: HighlightItem[] = [
     title: '物販ブース',
     description:
       '台湾雑貨やフードの販売。台湾から直接仕入れたアイテムや、本格的な台湾フードが楽しめます。',
-    image: '/images/feature-culture.jpg',
+    image: '/y2026/images/feature-culture.jpg',
     imageAlt: '台湾雑貨やフードの物販ブースの様子',
   },
   {
     title: 'ワークショップ',
     description:
       '台湾文化を体験できるハンズオンプログラム。台湾結び、花文字など、楽しい体験が盛りだくさん。',
-    image: '/images/taiwan_musubi.png',
+    image: '/y2026/images/taiwan_musubi.png',
     imageAlt: '台湾文化ワークショップ体験の様子',
   },
   {
     title: 'ステージイベント',
     description:
       'トークショー、音楽ライブ、ポッドキャスト公開収録など、見て聴いて楽しめるステージプログラム。',
-    image: '/images/talkshow.jpg',
+    image: '/y2026/images/talkshow.jpg',
     imageAlt: 'ステージイベントの様子',
   },
 ];

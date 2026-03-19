@@ -41,7 +41,7 @@ const jsonLd = {
       addressCountry: 'JP',
     },
   },
-  image: '/images/ogp.jpg',
+  image: '/y2026/images/ogp.jpg',
   organizer: {
     '@type': 'Organization',
     name: '黒猫台湾まつり実行委員会',
