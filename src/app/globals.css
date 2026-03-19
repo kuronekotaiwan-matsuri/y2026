@@ -1,0 +1,169 @@
+/* ==============================================
+   デザイントークン（CSS Custom Properties）
+   docs/design-system.md に基づいて定義
+   ============================================== */
+
+:root {
+  /* --- カラー --- */
+  --color-primary: #C0392B;
+  --color-secondary: #F9B9B2;
+  --color-accent: #D4A017;
+  --color-background: #FDF6F0;
+  --color-background-alt: #F9B9B2;
+  --color-text: #2C1810;
+  --color-text-light: #6B4C3B;
+  --color-border: #E8C8B8;
+
+  /* ヘッダー */
+  --color-header-bg: #C0392B;
+  --color-header-text: #FFFFFF;
+
+  /* フッター */
+  --color-footer-bg: #2C1810;
+  --color-footer-text: #F9E6D5;
+
+  /* ボタン（プライマリ） */
+  --color-button-primary-bg: #C0392B;
+  --color-button-primary-text: #FFFFFF;
+
+  /* ボタン（セカンダリ） */
+  --color-button-secondary-bg: transparent;
+  --color-button-secondary-text: #C0392B;
+  --color-button-secondary-border: #C0392B;
+
+  /* --- タイポグラフィ --- */
+  --font-heading: "Zen Maru Gothic", sans-serif;
+  --font-body: "Zen Maru Gothic", sans-serif;
+  --font-size-base: 16px;
+  --font-size-h1: 2.75rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.5rem;
+  --font-size-small: 0.875rem;
+  --font-weight-heading: 700;
+  --font-weight-body: 400;
+  --line-height-body: 1.8;
+  --letter-spacing-heading: 0.03em;
+
+  /* --- スペーシング --- */
+  --spacing-unit: 8px;
+  --spacing-section: 76px;
+  --spacing-content: 24px;
+  --content-max-width: 1100px;
+
+  /* --- コンポーネントスタイル --- */
+  --border-radius: 14px;
+  --border-radius-lg: 18px;
+  --border-radius-button: 50px;
+  --shadow: 0 2px 6px rgba(44, 24, 16, 0.08);
+  --shadow-hover: 0 6px 18px rgba(44, 24, 16, 0.14);
+  --transition-speed: 0.25s;
+
+  /* --- レイアウト --- */
+  --hero-min-height: 65vh;
+  --card-columns: 3;
+
+  /* --- ブレークポイント（参照用、メディアクエリではCSS変数は使用不可） --- */
+  /* モバイル: 768px */
+  /* タブレット: 1024px */
+}
+
+/* ==============================================
+   リセットCSS
+   ============================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: var(--font-size-base);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-body);
+  line-height: var(--line-height-body);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 見出しの共通スタイル */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-heading);
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+}
+
+/* リスト・リンクのリセット */
+ul, ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 画像のリセット */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ボタンのリセット */
+button {
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* テーブルのリセット */
+table {
+  border-collapse: collapse;
+}
+
+/* フォーム要素のリセット */
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* ==============================================
+   フェードインアニメーション（useFadeInフック用）
+   ============================================== */
+
+/* 初期状態: 非表示、下方向にオフセット */
+.fadeIn {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* 表示状態: フェードイン完了 */
+.fadeInVisible {
+  opacity: 1;
+  transform: translateY(0);
+}

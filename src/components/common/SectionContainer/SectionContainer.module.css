@@ -1,0 +1,22 @@
+/* セクション共通のラッパースタイル */
+.section {
+  padding: var(--spacing-section) var(--spacing-content);
+}
+
+/* 代替背景色バリアント */
+.alt {
+  background-color: var(--color-background-alt);
+}
+
+/* コンテンツ内側: 最大幅制限と中央寄せ */
+.inner {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+}
+
+/* モバイル対応: セクション間余白を縮小 */
+@media (max-width: 768px) {
+  .section {
+    padding: calc(var(--spacing-section) * 0.6) var(--spacing-content);
+  }
+}

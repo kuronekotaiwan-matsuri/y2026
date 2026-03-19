@@ -1,0 +1,68 @@
+/* ヒーローセクション */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--hero-min-height);
+  background-image: linear-gradient(
+    rgba(249, 185, 178, 0.7),
+    rgba(249, 185, 178, 0.8)
+  ), url('/images/hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-color: var(--color-background-alt);
+  padding: calc(var(--spacing-unit) * 6) var(--spacing-content);
+  text-align: center;
+}
+
+.inner {
+  max-width: var(--content-max-width);
+  width: 100%;
+}
+
+/* イベント名 */
+.title {
+  color: var(--color-primary);
+  margin-bottom: calc(var(--spacing-unit) * 2);
+}
+
+/* キャッチコピー */
+.catchcopy {
+  font-size: var(--font-size-h3);
+  color: var(--color-text);
+  margin-bottom: calc(var(--spacing-unit) * 3);
+  font-weight: var(--font-weight-heading);
+}
+
+/* 開催日時 */
+.date {
+  font-size: 1.125rem;
+  color: var(--color-text-light);
+  margin-bottom: calc(var(--spacing-unit) * 5);
+}
+
+/* CTAボタンラッパー */
+.cta {
+  display: flex;
+  justify-content: center;
+}
+
+/* モバイル向け調整 */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 50vh;
+    padding: calc(var(--spacing-unit) * 4) var(--spacing-content);
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .catchcopy {
+    font-size: 1.125rem;
+  }
+
+  .date {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,70 @@
+/* 開催情報セクション */
+
+/* 定義リスト全体 */
+.list {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* 各項目の行 */
+.item {
+  display: flex;
+  gap: calc(var(--spacing-unit) * 2);
+  padding: calc(var(--spacing-unit) * 2) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+/* 項目名 */
+.term {
+  font-weight: var(--font-weight-heading);
+  min-width: 80px;
+  flex-shrink: 0;
+  color: var(--color-text);
+}
+
+/* 項目値 */
+.detail {
+  color: var(--color-text-light);
+}
+
+/* 補足情報（会場名など） */
+.subDetail {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-heading);
+  color: var(--color-text);
+}
+
+/* 地図リンクラッパー */
+.mapLink {
+  text-align: center;
+  margin-top: calc(var(--spacing-unit) * 4);
+}
+
+/* 地図リンク */
+.link {
+  display: inline-block;
+  color: var(--color-primary);
+  font-weight: var(--font-weight-heading);
+  text-decoration: underline;
+  transition: opacity var(--transition-speed);
+}
+
+.link:hover {
+  opacity: 0.7;
+}
+
+/* モバイル向け調整 */
+@media (max-width: 768px) {
+  .item {
+    flex-direction: column;
+    gap: calc(var(--spacing-unit) * 0.5);
+  }
+
+  .term {
+    min-width: unset;
+  }
+}

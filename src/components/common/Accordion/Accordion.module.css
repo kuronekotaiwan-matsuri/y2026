@@ -1,0 +1,75 @@
+/* ==============================================
+   Accordion コンポーネントのスタイル
+   ============================================== */
+
+.accordion {
+  width: 100%;
+}
+
+/* 各アコーディオン項目 */
+.item {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.item:first-child {
+  border-top: 1px solid var(--color-border);
+}
+
+/* 質問部分のトリガーボタン */
+.trigger {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: calc(var(--spacing-unit) * 2) 8px;
+  text-align: left;
+  color: var(--color-text);
+  font-weight: var(--font-weight-heading);
+  font-size: var(--font-size-base);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color var(--transition-speed) ease;
+}
+
+.trigger:hover {
+  color: var(--color-primary);
+}
+
+/* 展開アイコン */
+.icon {
+  flex-shrink: 0;
+  width: 1.2em;
+  display: flex;
+  align-items: center;
+  transition: transform var(--transition-speed) ease;
+}
+
+/* アイコン展開時: 90度回転 */
+.iconOpen {
+  transform: rotate(90deg);
+}
+
+/* 質問テキスト */
+.question {
+  flex: 1;
+}
+
+/* 回答パネル: max-height でスライドアニメーション */
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-speed) ease;
+}
+
+/* パネル展開時 */
+.panelOpen {
+  max-height: 500px;
+}
+
+/* 回答テキスト */
+.answer {
+  padding: 0 0 calc(var(--spacing-unit) * 2) calc(var(--spacing-unit) * 3);
+  color: var(--color-text-light);
+  line-height: var(--line-height-body);
+  font-size: var(--font-size-base);
+}

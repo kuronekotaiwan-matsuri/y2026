@@ -1,0 +1,34 @@
+/* ==============================================
+   ShopCardList コンポーネントのスタイル
+   グリッドレイアウトで出店者カードを配置する
+   ============================================== */
+
+/* グリッドレイアウト: モバイルファースト（2列） */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: calc(var(--spacing-unit) * 2);
+}
+
+/* タブレット: 3列 */
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-content);
+  }
+}
+
+/* デスクトップ: 4列 */
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* 該当なしメッセージ */
+.empty {
+  text-align: center;
+  padding: calc(var(--spacing-unit) * 8) var(--spacing-content);
+  color: var(--color-text-light);
+  font-size: var(--font-size-h3);
+}
