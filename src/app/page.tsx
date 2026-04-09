@@ -4,6 +4,7 @@ import TrustBar from '@/components/home/TrustBar/TrustBar';
 import AboutBriefSection from '@/components/home/AboutBriefSection/AboutBriefSection';
 import EventInfoSection from '@/components/home/EventInfoSection/EventInfoSection';
 import FeaturesSection from '@/components/home/FeaturesSection/FeaturesSection';
+import FaqTeaserSection from '@/components/home/FaqTeaserSection/FaqTeaserSection';
 import ContactBriefSection from '@/components/home/ContactBriefSection/ContactBriefSection';
 
 // ページ固有のメタデータ（SEO・OGP対応）
@@ -112,6 +113,9 @@ export default function Home() {
 
       {/* 特色紹介セクション */}
       <FeaturesSection />
+
+      {/* FAQ誘導ブロック */}
+      <FaqTeaserSection />
 
       {/* お問い合わせ簡易セクション */}
       <ContactBriefSection />
