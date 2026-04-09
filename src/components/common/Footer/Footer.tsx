@@ -1,6 +1,9 @@
 import Link from "next/link";
 import styles from "./Footer.module.css";
 
+/** サイトの最終更新日（手動更新） */
+const LAST_UPDATED = "2026-04-08";
+
 /** フッターに表示するサイト内リンクの定義 */
 const footerLinks = [
   { href: "/", label: "トップ" },
@@ -35,6 +38,11 @@ export default function Footer() {
             ))}
           </ul>
         </nav>
+
+        {/* 最終更新日（フレッシュネスシグナル） */}
+        <p className={styles.lastUpdated}>
+          最終更新日: <time dateTime={LAST_UPDATED}>{LAST_UPDATED}</time>
+        </p>
 
         {/* 著作権表記 */}
         <p className={styles.copyright}>
