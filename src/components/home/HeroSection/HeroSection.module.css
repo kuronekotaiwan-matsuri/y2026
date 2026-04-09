@@ -30,21 +30,51 @@
 .catchcopy {
   font-size: var(--font-size-h3);
   color: var(--color-text);
-  margin-bottom: calc(var(--spacing-unit) * 3);
+  margin-bottom: calc(var(--spacing-unit) * 1);
   font-weight: var(--font-weight-heading);
 }
 
-/* 開催日時 */
-.date {
-  font-size: 1.125rem;
+/* サブキャッチ */
+.subCatch {
+  font-size: 1rem;
   color: var(--color-text-light);
-  margin-bottom: calc(var(--spacing-unit) * 5);
+  margin-bottom: calc(var(--spacing-unit) * 3);
+}
+
+/* 開催情報のミニリスト */
+.factList {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto calc(var(--spacing-unit) * 4);
+  max-width: 480px;
+  text-align: left;
+  display: inline-block;
+}
+
+.factList li {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--spacing-unit) * 1);
+  font-size: 1.05rem;
+  color: var(--color-text);
+  padding: calc(var(--spacing-unit) * 0.5) 0;
+  font-weight: var(--font-weight-heading);
 }
 
 /* CTAボタンラッパー */
 .cta {
   display: flex;
   justify-content: center;
+  gap: calc(var(--spacing-unit) * 2);
+  flex-wrap: wrap;
+  margin-bottom: calc(var(--spacing-unit) * 3);
+}
+
+/* 信頼バー */
+.trustBar {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  margin-top: calc(var(--spacing-unit) * 2);
 }
 
 /* モバイル向け調整 */
