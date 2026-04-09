@@ -59,6 +59,27 @@ export default function EventInfoSection() {
             Google Maps で会場を確認する &#x2197;
           </Button>
         </div>
+
+        {/* チラシPDFダウンロード */}
+        <div className={styles.flyerLinks}>
+          <p className={styles.flyerHeading}>チラシのダウンロード</p>
+          <div className={styles.flyerButtons}>
+            <Button
+              variant="secondary"
+              href="/y2026/flyer/flyer-2026-front.pdf"
+              external
+            >
+              チラシ表 &#x2B07;
+            </Button>
+            <Button
+              variant="secondary"
+              href="/y2026/flyer/flyer-2026-back.pdf"
+              external
+            >
+              会場マップ（裏） &#x2B07;
+            </Button>
+          </div>
+        </div>
       </div>
     </SectionContainer>
   );

@@ -44,6 +44,25 @@
   margin-top: calc(var(--spacing-unit) * 4);
 }
 
+/* チラシダウンロードラッパー */
+.flyerLinks {
+  text-align: center;
+  margin-top: calc(var(--spacing-unit) * 3);
+}
+
+.flyerHeading {
+  font-weight: var(--font-weight-heading);
+  color: var(--color-text);
+  margin-bottom: calc(var(--spacing-unit) * 1.5);
+}
+
+.flyerButtons {
+  display: flex;
+  gap: calc(var(--spacing-unit) * 1.5);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 /* 地図リンク */
 .link {
   display: inline-block;
