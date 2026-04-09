@@ -47,6 +47,40 @@ export default function EventInfoSection() {
             <dt className={styles.term}>参加費</dt>
             <dd className={styles.detail}>無料</dd>
           </div>
+
+          <div className={styles.item}>
+            <dt className={styles.term}>アクセス</dt>
+            <dd className={styles.detail}>
+              東急田園都市線 二子新地駅 徒歩5分
+              <br />
+              <span className={styles.subDetail}>
+                渋谷駅から電車で約30分。専用駐車場・駐輪場はございません。
+              </span>
+            </dd>
+          </div>
+
+          <div className={styles.item}>
+            <dt className={styles.term}>お子さま連れ</dt>
+            <dd className={styles.detail}>
+              ベビーカーOK／駄菓子屋・ワークショップあり／屋内休憩スペース・トイレも複数完備
+            </dd>
+          </div>
+
+          <div className={styles.item}>
+            <dt className={styles.term}>雨天時</dt>
+            <dd className={styles.detail}>
+              小雨決行。荒天時の中止判断は当日朝に
+              <a
+                href="https://www.instagram.com/kuronekotaiwan_matsuri/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.inlineLink}
+              >
+                公式Instagram
+              </a>
+              でお知らせします。
+            </dd>
+          </div>
         </dl>
 
         {/* Google Maps への外部リンク */}
