@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: '黒猫台湾まつり2026 | 川崎市高津区で台湾文化を体験しよう',
   description:
     '2026年5月30日(土)・31日(日)開催。川崎市高津区の大山街道沿いで、台湾グルメ、ワークショップ、ステージイベントが楽しめるお祭りです。入場無料。',
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     title: '黒猫台湾まつり2026 | 川崎市高津区で台湾文化を体験しよう',
     description:
@@ -16,6 +19,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'ja_JP',
     siteName: '黒猫台湾まつり2026',
+    url: '/',
   },
 };
 

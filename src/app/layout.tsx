@@ -9,9 +9,13 @@ const GA_ID = "G-5JW9C3WY72";
 
 // メタデータの定義（SEO・OGP対応）
 export const metadata: Metadata = {
+  metadataBase: new URL("https://kuronekotaiwan-matsuri.github.io/y2026"),
   title: "黒猫台湾まつり2026",
   description:
     "川崎市高津区で開催される台湾文化イベント「黒猫台湾まつり2026」の公式サイトです。台湾グルメ、ワークショップ、ステージイベントなど盛りだくさん！",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "黒猫台湾まつり2026",
     description:
@@ -19,6 +23,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ja_JP",
     siteName: "黒猫台湾まつり2026",
+    url: "https://kuronekotaiwan-matsuri.github.io/y2026/",
   },
 };
 

@@ -7,11 +7,15 @@ export const metadata: Metadata = {
   title: 'お問い合わせ | 黒猫台湾まつり2026',
   description:
     '黒猫台湾まつり2026に関するよくある質問（FAQ）と連絡先情報。Instagram・メールでのお問い合わせや会場へのアクセス情報をご確認いただけます。',
+  alternates: {
+    canonical: '/contact-us',
+  },
   openGraph: {
     title: 'お問い合わせ | 黒猫台湾まつり2026',
     description:
       '黒猫台湾まつり2026に関するよくある質問（FAQ）と連絡先情報。',
     type: 'website',
+    url: '/contact-us',
   },
 };
 

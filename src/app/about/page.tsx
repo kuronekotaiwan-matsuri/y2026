@@ -8,11 +8,15 @@ export const metadata: Metadata = {
   title: 'イベントについて | 黒猫台湾まつり2026',
   description:
     '黒猫台湾まつり2026のイベント趣旨、見どころ、過去の開催風景をご紹介します。台湾文化の発信・地域活性化・交流の場として開催されるお祭りです。',
+  alternates: {
+    canonical: '/about',
+  },
   openGraph: {
     title: 'イベントについて | 黒猫台湾まつり2026',
     description:
       '黒猫台湾まつり2026のイベント趣旨、見どころ、過去の開催風景をご紹介します。',
     type: 'website',
+    url: '/about',
   },
 };
 
