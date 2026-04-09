@@ -71,7 +71,7 @@ export default function EventInfoSection() {
             <dd className={styles.detail}>
               小雨決行。荒天時の中止判断は当日朝に
               <a
-                href="https://www.instagram.com/kuronekotaiwan_matsuri/"
+                href="https://www.instagram.com/kuronekotw_fes/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.inlineLink}

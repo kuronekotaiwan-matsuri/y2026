@@ -43,12 +43,12 @@ export default function ContactInfoSection() {
             <div className={styles.contactContent}>
               <span className={styles.contactLabel}>Instagram</span>
               <a
-                href="https://www.instagram.com/kuronekotaiwan_matsuri"
+                href="https://www.instagram.com/kuronekotw_fes"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.contactLink}
               >
-                @kuronekotaiwan_matsuri
+                @kuronekotw_fes
               </a>
             </div>
           </li>

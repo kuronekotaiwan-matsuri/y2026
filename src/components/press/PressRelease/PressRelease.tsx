@@ -65,12 +65,12 @@ export default function PressRelease() {
               <dt className={styles.detailLabel}>Instagram</dt>
               <dd className={styles.detailValue}>
                 <a
-                  href="https://www.instagram.com/kuronekotaiwan_matsuri"
+                  href="https://www.instagram.com/kuronekotw_fes"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.link}
                 >
-                  @kuronekotaiwan_matsuri
+                  @kuronekotw_fes
                 </a>
               </dd>
             </div>

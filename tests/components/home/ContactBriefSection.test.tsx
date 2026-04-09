@@ -7,20 +7,20 @@ describe('ContactBriefSection コンポーネント', () => {
   });
 
   // --- セクションタイトル ---
-  test('「お問い合わせ」セクションタイトルが表示される', () => {
+  test('「最新情報・お問い合わせ」セクションタイトルが表示される', () => {
     expect(
-      screen.getByRole('heading', { name: 'お問い合わせ' })
+      screen.getByRole('heading', { name: '最新情報・お問い合わせ' })
     ).toBeInTheDocument();
   });
 
   // --- Instagram リンク ---
   test('Instagram リンクが target="_blank" で表示される', () => {
-    const igLink = screen.getByText('@kuronekotaiwan_matsuri');
+    const igLink = screen.getByText('@kuronekotw_fes');
     expect(igLink.closest('a')).toHaveAttribute('target', '_blank');
     expect(igLink.closest('a')).toHaveAttribute('rel', 'noopener noreferrer');
     expect(igLink.closest('a')).toHaveAttribute(
       'href',
-      expect.stringContaining('instagram.com/kuronekotaiwan_matsuri')
+      expect.stringContaining('instagram.com/kuronekotw_fes')
     );
   });
 

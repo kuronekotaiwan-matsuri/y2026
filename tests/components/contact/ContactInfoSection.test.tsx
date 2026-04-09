@@ -21,12 +21,12 @@ describe('ContactInfoSection コンポーネント', () => {
 
   // --- Instagram リンク ---
   test('Instagram リンクが正しいURLで表示される', () => {
-    const igLink = screen.getByText('@kuronekotaiwan_matsuri');
+    const igLink = screen.getByText('@kuronekotw_fes');
     const anchor = igLink.closest('a')!;
 
     expect(anchor).toHaveAttribute(
       'href',
-      'https://www.instagram.com/kuronekotaiwan_matsuri'
+      'https://www.instagram.com/kuronekotw_fes'
     );
     expect(anchor).toHaveAttribute('target', '_blank');
     expect(anchor).toHaveAttribute('rel', 'noopener noreferrer');

@@ -21,7 +21,7 @@ const siteJsonLd = {
       alternateName: "Kuroneko Taiwan Matsuri",
       url: `${SITE_URL}/`,
       logo: `${SITE_URL}/images/neko_face/neko_face.png`,
-      sameAs: ["https://www.instagram.com/kuronekotaiwan_matsuri/"],
+      sameAs: ["https://www.instagram.com/kuronekotw_fes/"],
       contactPoint: {
         "@type": "ContactPoint",
         email: "kuronekotaiwan.matsuri@gmail.com",

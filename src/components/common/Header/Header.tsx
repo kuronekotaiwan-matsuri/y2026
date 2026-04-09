@@ -14,7 +14,7 @@ const navLinks = [
 
 /** Instagram公式アカウントのURL */
 const instagramUrl =
-  "https://www.instagram.com/kuronekotaiwan_matsuri/";
+  "https://www.instagram.com/kuronekotw_fes/";
 
 /**
  * Header コンポーネント

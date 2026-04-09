@@ -6,7 +6,7 @@ import { useFadeIn } from '@/hooks/useFadeIn';
 import styles from './ContactBriefSection.module.css';
 
 /** Instagram アカウントURL */
-const INSTAGRAM_URL = 'https://www.instagram.com/kuronekotaiwan_matsuri';
+const INSTAGRAM_URL = 'https://www.instagram.com/kuronekotw_fes';
 
 /** メールアドレス */
 const EMAIL = 'kuronekotaiwan.matsuri@gmail.com';
@@ -59,7 +59,7 @@ export default function ContactBriefSection() {
                 <circle cx="17.5" cy="6.5" r="1.5" />
               </svg>
             </span>
-            <span>@kuronekotaiwan_matsuri</span>
+            <span>@kuronekotw_fes</span>
           </a>
 
           {/* メールリンク */}

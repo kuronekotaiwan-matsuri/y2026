@@ -16,7 +16,7 @@
 - **入場料:** 無料
 - **主催:** 黒猫台湾まつり実行委員会 / 二子大通り商和会
 - **後援:** 川崎市高津区役所
-- **公式SNS:** Instagram @kuronekotaiwan_matsuri
+- **公式SNS:** Instagram @kuronekotw_fes
 
 ## Target Audience
 **Target audiences:**

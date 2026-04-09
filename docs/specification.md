@@ -156,7 +156,7 @@
      - ワークショップの予約方法は？
 
 2. **お問い合わせ情報セクション**
-   - Instagram: @kuronekotaiwan_matsuri
+   - Instagram: @kuronekotw_fes
    - メール: kuronekotaiwan.matsuri@gmail.com
    - 住所: 神奈川県川崎市高津区二子2丁目8-8 ウッディモアル 駄菓子の木村屋
 

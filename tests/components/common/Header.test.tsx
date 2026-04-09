@@ -78,7 +78,7 @@ describe("Header コンポーネント", () => {
     const instagramLink = screen.getByLabelText("Instagram");
     expect(instagramLink).toHaveAttribute(
       "href",
-      "https://www.instagram.com/kuronekotaiwan_matsuri/"
+      "https://www.instagram.com/kuronekotw_fes/"
     );
   });
 
