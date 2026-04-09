@@ -22,7 +22,16 @@ export default function ContactBriefSection() {
   return (
     <SectionContainer id="contact">
       <div ref={ref} className={fadeClassName}>
-        <SectionTitle title="お問い合わせ" />
+        <SectionTitle title="最新情報・お問い合わせ" />
+
+        {/* フォロー動機 */}
+        <p className={styles.motive}>
+          出演者発表・タイムテーブル・当日の雨天判断は
+          <br />
+          <strong>公式Instagramで随時お知らせ</strong>します。
+          <br />
+          フォローしてお見逃しなく。
+        </p>
 
         {/* 連絡先リンク一覧 */}
         <div className={styles.links}>

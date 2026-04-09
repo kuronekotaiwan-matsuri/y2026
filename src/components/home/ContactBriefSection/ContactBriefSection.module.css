@@ -1,5 +1,13 @@
 /* お問い合わせ簡易セクション */
 
+/* フォロー動機テキスト */
+.motive {
+  text-align: center;
+  color: var(--color-text);
+  line-height: 1.9;
+  margin-bottom: calc(var(--spacing-unit) * 4);
+}
+
 /* リンク一覧: 中央揃え・縦並び */
 .links {
   display: flex;
