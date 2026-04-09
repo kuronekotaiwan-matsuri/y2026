@@ -1,6 +1,25 @@
 import type { Metadata } from 'next';
 import FaqSection from '@/components/contact/FaqSection/FaqSection';
 import ContactInfoSection from '@/components/contact/ContactInfoSection/ContactInfoSection';
+import { faqItems } from '@/data/faq';
+
+/** サイトのベースURL */
+const SITE_URL = 'https://kuronekotaiwan-matsuri.github.io/y2026';
+
+/** FAQPage JSON-LD（faqItemsから動的生成） */
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  '@id': `${SITE_URL}/contact-us#faq`,
+  mainEntity: faqItems.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: item.answer,
+    },
+  })),
+};
 
 /** ページメタデータ */
 export const metadata: Metadata = {
@@ -26,6 +45,12 @@ export const metadata: Metadata = {
 export default function ContactUsPage() {
   return (
     <>
+      {/* JSON-LD 構造化データ（FAQPage） */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+
       {/* よくある質問セクション */}
       <FaqSection />
 
