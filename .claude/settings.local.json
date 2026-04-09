@@ -58,7 +58,9 @@
       "Bash(shuf -n *)",
       "Bash(npx sharp-cli:*)",
       "Bash(gh api:*)",
-      "Bash(gh run:*)"
+      "Bash(gh run:*)",
+      "Bash(mv \"20260406表_2026黒猫_A3二つ折り.pdf\" flyer-2026-front.pdf)",
+      "Bash(mv \"20260406_裏_2026_黒猫まつり_A3二つ折り .pdf\" flyer-2026-back.pdf)"
     ]
   }
 }
