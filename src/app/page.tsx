@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import HeroSection from '@/components/home/HeroSection/HeroSection';
+import AboutBriefSection from '@/components/home/AboutBriefSection/AboutBriefSection';
 import EventInfoSection from '@/components/home/EventInfoSection/EventInfoSection';
 import FeaturesSection from '@/components/home/FeaturesSection/FeaturesSection';
 import ContactBriefSection from '@/components/home/ContactBriefSection/ContactBriefSection';
@@ -98,6 +99,9 @@ export default function Home() {
 
       {/* ヒーローセクション */}
       <HeroSection />
+
+      {/* 概要定義ブロック（AI抽出最適化） */}
+      <AboutBriefSection />
 
       {/* 開催情報セクション */}
       <EventInfoSection />

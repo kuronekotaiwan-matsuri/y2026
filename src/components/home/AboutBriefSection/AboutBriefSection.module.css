@@ -1,0 +1,17 @@
+/* 概要定義ブロック */
+
+.heading {
+  font-size: var(--font-size-heading-md, 1.5rem);
+  font-weight: var(--font-weight-heading);
+  color: var(--color-text);
+  text-align: center;
+  margin-bottom: calc(var(--spacing-unit) * 2);
+}
+
+.lead {
+  max-width: 720px;
+  margin: 0 auto;
+  color: var(--color-text);
+  line-height: 1.9;
+  font-size: var(--font-size-base, 1rem);
+}
