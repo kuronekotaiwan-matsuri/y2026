@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import HeroSection from '@/components/home/HeroSection/HeroSection';
+import TrustBar from '@/components/home/TrustBar/TrustBar';
 import AboutBriefSection from '@/components/home/AboutBriefSection/AboutBriefSection';
 import EventInfoSection from '@/components/home/EventInfoSection/EventInfoSection';
 import FeaturesSection from '@/components/home/FeaturesSection/FeaturesSection';
@@ -99,6 +100,9 @@ export default function Home() {
 
       {/* ヒーローセクション */}
       <HeroSection />
+
+      {/* 信頼バー */}
+      <TrustBar />
 
       {/* 概要定義ブロック（AI抽出最適化） */}
       <AboutBriefSection />
