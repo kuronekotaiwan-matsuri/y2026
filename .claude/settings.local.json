@@ -56,7 +56,9 @@
       "Bash(npx create-next-app@latest . --typescript --app --eslint --no-tailwind --src-dir --import-alias \"@/*\" --yes)",
       "Bash(npm init:*)",
       "Bash(shuf -n *)",
-      "Bash(npx sharp-cli:*)"
+      "Bash(npx sharp-cli:*)",
+      "Bash(gh api:*)",
+      "Bash(gh run:*)"
     ]
   }
 }
