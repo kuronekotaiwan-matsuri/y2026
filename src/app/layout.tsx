@@ -7,6 +7,41 @@ import Footer from "@/components/common/Footer/Footer";
 /** Google Analytics 測定ID */
 const GA_ID = "G-5JW9C3WY72";
 
+/** サイトのベースURL */
+const SITE_URL = "https://kuronekotaiwan-matsuri.github.io/y2026";
+
+/** サイト全体で共有するJSON-LD（Organization + WebSite） */
+const siteJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${SITE_URL}/#organization`,
+      name: "黒猫台湾まつり実行委員会",
+      alternateName: "Kuroneko Taiwan Matsuri",
+      url: `${SITE_URL}/`,
+      logo: `${SITE_URL}/images/neko_face/neko_face.png`,
+      sameAs: ["https://www.instagram.com/kuronekotaiwan_matsuri/"],
+      contactPoint: {
+        "@type": "ContactPoint",
+        email: "kuronekotaiwan.matsuri@gmail.com",
+        contactType: "customer service",
+        availableLanguage: ["Japanese", "Chinese"],
+      },
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${SITE_URL}/#website`,
+      url: `${SITE_URL}/`,
+      name: "黒猫台湾まつり2026",
+      description:
+        "川崎・二子新地で開催される地域密着型台湾カルチャーフェスティバル（第4回）",
+      publisher: { "@id": `${SITE_URL}/#organization` },
+      inLanguage: "ja-JP",
+    },
+  ],
+};
+
 // メタデータの定義（SEO・OGP対応）
 export const metadata: Metadata = {
   metadataBase: new URL("https://kuronekotaiwan-matsuri.github.io/y2026"),
@@ -39,6 +74,12 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <head>
+        {/* JSON-LD 構造化データ（Organization + WebSite） */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}
+        />
+
         {/* Google Analytics */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
