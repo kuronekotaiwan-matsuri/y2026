@@ -3,14 +3,14 @@ import PressRelease from '@/components/press/PressRelease/PressRelease';
 
 /** ページメタデータ */
 export const metadata: Metadata = {
-  title: 'プレスリリース | 黒猫台湾まつり2026',
+  title: 'プレスリリース | 黒猫台湾まつり2026（川崎・二子新地 第4回）',
   description:
     '報道関係者向け「黒猫台湾まつり2026」のプレスリリース。イベント概要、見どころ、お問い合わせ先などの情報を掲載しています。',
   alternates: {
     canonical: '/press',
   },
   openGraph: {
-    title: 'プレスリリース | 黒猫台湾まつり2026',
+    title: 'プレスリリース | 黒猫台湾まつり2026（川崎・二子新地 第4回）',
     description:
       '報道関係者向け「黒猫台湾まつり2026」のプレスリリース。',
     type: 'website',

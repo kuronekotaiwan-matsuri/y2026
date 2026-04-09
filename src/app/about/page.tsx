@@ -5,14 +5,14 @@ import GallerySection from '@/components/about/GallerySection/GallerySection';
 
 /** ページメタデータ */
 export const metadata: Metadata = {
-  title: 'イベントについて | 黒猫台湾まつり2026',
+  title: '黒猫台湾まつりとは | 二子新地・大山街道発の台湾カルチャーフェス',
   description:
-    '黒猫台湾まつり2026のイベント趣旨、見どころ、過去の開催風景をご紹介します。台湾文化の発信・地域活性化・交流の場として開催されるお祭りです。',
+    '川崎市高津区・二子新地の商店街が主催する台湾カルチャーフェスティバル「黒猫台湾まつり」。実店舗3軒（黒猫豆花・麺線屋formosa・佰老亭）を起点に、台湾文化の発信・地域活性化・世代交流を目指す第4回の開催趣旨・見どころ・過去の開催風景を紹介します。',
   alternates: {
     canonical: '/about',
   },
   openGraph: {
-    title: 'イベントについて | 黒猫台湾まつり2026',
+    title: '黒猫台湾まつりとは | 二子新地・大山街道発の台湾カルチャーフェス',
     description:
       '黒猫台湾まつり2026のイベント趣旨、見どころ、過去の開催風景をご紹介します。',
     type: 'website',
