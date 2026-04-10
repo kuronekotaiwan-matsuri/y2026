@@ -72,6 +72,69 @@
   margin-bottom: calc(var(--spacing-unit) * 1.5);
 }
 
+/* タイムスロット表示エリア */
+.schedule {
+  margin-bottom: calc(var(--spacing-unit) * 1.5);
+  padding: calc(var(--spacing-unit) * 1.5);
+  background-color: var(--color-background-alt);
+  border-radius: var(--border-radius);
+}
+
+/* 予約案内 */
+.reservationNotice {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--spacing-unit) * 1);
+  margin-bottom: calc(var(--spacing-unit) * 1);
+}
+
+.reservationBadge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-heading);
+  color: #fff;
+  background-color: var(--color-primary);
+  padding: 2px 8px;
+  border-radius: var(--border-radius);
+}
+
+.reservationLink {
+  font-size: var(--font-size-small);
+  color: var(--color-primary);
+  font-weight: var(--font-weight-heading);
+  text-decoration: underline;
+}
+
+.reservationLink:hover {
+  opacity: 0.7;
+}
+
+/* 日付ごとのスケジュール行 */
+.daySchedule {
+  display: flex;
+  align-items: baseline;
+  gap: calc(var(--spacing-unit) * 0.75);
+  margin-bottom: calc(var(--spacing-unit) * 0.25);
+}
+
+.daySchedule:last-child {
+  margin-bottom: 0;
+}
+
+.dayLabel {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-heading);
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+/* 時刻テキスト */
+.timeText {
+  font-size: var(--font-size-small);
+  color: var(--color-text-light);
+  line-height: 1.5;
+}
+
 /* 外部リンクエリア */
 .links {
   display: flex;

@@ -1,0 +1,173 @@
+/* ==============================================
+   TimetableView コンポーネントのスタイル
+   日付タブ＋カテゴリ別タイムライン表示
+   ============================================== */
+
+/* 日付タブ */
+.tabs {
+  display: flex;
+  gap: calc(var(--spacing-unit) * 1);
+  margin-bottom: calc(var(--spacing-unit) * 4);
+}
+
+.tab {
+  flex: 1;
+  padding: calc(var(--spacing-unit) * 1.5) calc(var(--spacing-unit) * 3);
+  border: 2px solid var(--color-border);
+  border-radius: var(--border-radius-button);
+  background-color: var(--color-background);
+  color: var(--color-text-light);
+  font-size: 1rem;
+  font-weight: var(--font-weight-heading);
+  cursor: pointer;
+  transition: background-color var(--transition-speed) ease,
+              color var(--transition-speed) ease,
+              border-color var(--transition-speed) ease;
+}
+
+.tabActive {
+  background-color: var(--color-text);
+  color: var(--color-background);
+  border-color: var(--color-text);
+}
+
+/* カテゴリセクション */
+.categorySection {
+  margin-bottom: calc(var(--spacing-unit) * 5);
+}
+
+.categoryTitle {
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-heading);
+  color: var(--color-text);
+  padding-bottom: calc(var(--spacing-unit) * 1);
+  border-bottom: 2px solid var(--color-primary);
+  margin-bottom: calc(var(--spacing-unit) * 2);
+}
+
+/* タイムライン */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing-unit) * 2);
+}
+
+/* 個別スロット */
+.slot {
+  display: flex;
+  gap: calc(var(--spacing-unit) * 2);
+  padding: calc(var(--spacing-unit) * 2);
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow);
+}
+
+/* 時刻エリア */
+.time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 5em;
+  flex-shrink: 0;
+}
+
+.timeStart {
+  font-size: 1.1rem;
+  font-weight: var(--font-weight-heading);
+  color: var(--color-text);
+}
+
+.timeSeparator {
+  font-size: var(--font-size-small);
+  color: var(--color-text-light);
+}
+
+.timeEnd {
+  font-size: var(--font-size-small);
+  color: var(--color-text-light);
+}
+
+/* スロットコンテンツ */
+.slotContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.slotHeader {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--spacing-unit) * 1);
+  margin-bottom: calc(var(--spacing-unit) * 0.5);
+  flex-wrap: wrap;
+}
+
+.slotName {
+  font-size: 1.05rem;
+  font-weight: var(--font-weight-heading);
+  color: var(--color-text);
+}
+
+.reservationBadge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-heading);
+  color: #fff;
+  background-color: var(--color-primary);
+  padding: 2px 8px;
+  border-radius: var(--border-radius);
+}
+
+.slotDescription {
+  font-size: var(--font-size-small);
+  color: var(--color-text-light);
+  line-height: 1.6;
+  margin-bottom: calc(var(--spacing-unit) * 1);
+}
+
+/* リンクエリア */
+.slotLinks {
+  display: flex;
+  gap: calc(var(--spacing-unit) * 2);
+  flex-wrap: wrap;
+}
+
+.reservationLink {
+  font-size: var(--font-size-small);
+  color: var(--color-primary);
+  font-weight: var(--font-weight-heading);
+  text-decoration: underline;
+}
+
+.reservationLink:hover {
+  opacity: 0.7;
+}
+
+.detailLink {
+  font-size: var(--font-size-small);
+  color: var(--color-text-light);
+  text-decoration: underline;
+}
+
+.detailLink:hover {
+  color: var(--color-text);
+}
+
+/* レスポンシブ: モバイル */
+@media (max-width: 768px) {
+  .slot {
+    flex-direction: column;
+    gap: calc(var(--spacing-unit) * 1);
+  }
+
+  .time {
+    flex-direction: row;
+    gap: calc(var(--spacing-unit) * 0.5);
+    min-width: auto;
+  }
+
+  .tab {
+    padding: calc(var(--spacing-unit) * 1.5) calc(var(--spacing-unit) * 2);
+    min-height: 44px;
+  }
+}

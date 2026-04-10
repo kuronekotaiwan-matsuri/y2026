@@ -23,8 +23,8 @@ export interface Shop {
   image: string;
   /** 説明文 */
   description: string;
-  /** Instagram URL（任意） */
-  instagramUrl?: string;
+  /** Instagram URL（任意・複数可） */
+  instagramUrl?: string | string[];
   /** Webサイト URL（任意） */
   websiteUrl?: string;
 }
@@ -132,7 +132,7 @@ export const shops: Shop[] = [
     dates: ['5/30', '5/31'],
     image: '/y2026/images/shops/asian_knot.jpg',
     description: '台湾の華やかな布雑貨で気分をあげてみませんか？',
-    instagramUrl: 'https://www.instagram.com/nori.f4ever',
+    instagramUrl: 'https://www.instagram.com/nori.f4evern',
     websiteUrl: '',
   },
   {
@@ -229,7 +229,7 @@ export const shops: Shop[] = [
     category: 'Podcast',
     dates: ['5/31'],
     image: '/y2026/images/shops/howto_taiwan.jpg',
-    description: 'Podcast「台湾好き女子のゆるっとおしゃべり」公開収録',
+    description: 'ゲストを迎えての公開収録。聴きたい台湾、ここにあり！',
     instagramUrl: 'https://www.instagram.com/howto_taiwan',
     websiteUrl: 'https://creators.spotify.com/pod/profile/howto-taiwan/',
   },
@@ -250,11 +250,11 @@ export const shops: Shop[] = [
     dates: ['5/30'],
     image: '/y2026/images/shops/norikomonji.jpg',
     description: '門司紀子と佐々木千絵によるトークショー',
-    instagramUrl: 'https://www.instagram.com/norikomonji',
+    instagramUrl: ['https://www.instagram.com/norikomonji', 'https://www.instagram.com/chie_sasa'],
   },
   {
     id: 'shop-021',
-    name: '竹内将子',
+    name: '好玩電台',
     category: 'トークショー',
     dates: ['5/30'],
     image: '/y2026/images/shops/haowandentai.jpg',
@@ -326,5 +326,22 @@ export const shops: Shop[] = [
     image: '/y2026/images/shops/aburayarockmay.futakoshinchi.jpg',
     description: 'かわさき推しメシグランプリ受賞店渾身の台湾まぜそばです！',
     instagramUrl: 'https://www.instagram.com/aburayarockmay.futakoshinichi',
+  },
+  {
+    id: 'shop-032',
+    name: '幸せの手相占い',
+    category: '店舗',
+    dates: ['5/31'],
+    image: '/y2026/images/shops/palmistry.jpg',
+    description: '中華街で学んだ鑑定士による前向きになれる手相占い'
+  },
+  {
+    id: 'shop-033',
+    name: '黒猫台湾まつり実行委員',
+    category: '店舗',
+    dates: ['5/31'],
+    image: '/y2026/images/shops/congyoubing.jpg',
+    description: 'おやつ以上おかず未満のサクもち台湾最べ歩きホットスナック！',
+    instagramUrl: 'https://www.instagram.com/kuronekotw_fes',
   },
 ];

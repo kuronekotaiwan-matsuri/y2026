@@ -81,7 +81,7 @@ describe('ShopCard コンポーネント', () => {
     test('Instagram と Webサイトのリンクが表示される', () => {
       render(<ShopCard shop={shopWithAllLinks} />);
 
-      const instagramLink = screen.getByLabelText('テスト台湾茶房のInstagram');
+      const instagramLink = screen.getByLabelText('テスト台湾茶房のInstagram (@test)');
       expect(instagramLink).toBeInTheDocument();
       expect(instagramLink).toHaveAttribute('href', 'https://www.instagram.com/test');
       expect(instagramLink).toHaveAttribute('target', '_blank');
@@ -104,7 +104,7 @@ describe('ShopCard コンポーネント', () => {
     test('Instagramのみの場合はInstagramのみ表示される', () => {
       render(<ShopCard shop={shopWithInstagramOnly} />);
 
-      expect(screen.getByLabelText('テストステージのInstagram')).toBeInTheDocument();
+      expect(screen.getByLabelText('テストステージのInstagram (@stage_test)')).toBeInTheDocument();
       expect(screen.queryByText('Webサイト')).not.toBeInTheDocument();
     });
   });

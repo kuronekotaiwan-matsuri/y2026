@@ -8,6 +8,8 @@ import type { FilterState } from '@/components/shops/FilterBar/FilterBar';
 import ShopCardList from '@/components/shops/ShopCardList/ShopCardList';
 import { shops, ALL_CATEGORIES, ALL_DATES } from '@/data/shops';
 import type { Shop } from '@/data/shops';
+import { timetable } from '@/data/timetable';
+import type { TimeSlot } from '@/data/timetable';
 
 // ==============================================
 // 出店情報ページ（クライアント本体）
@@ -28,6 +30,18 @@ function filterShops(allShops: Shop[], filter: FilterState): Shop[] {
     return categoryMatch && dateMatch;
   });
 }
+
+/** タイムスロットをshopIdごとにグループ化する */
+function buildTimeSlotMap(slots: TimeSlot[]): Record<string, TimeSlot[]> {
+  const map: Record<string, TimeSlot[]> = {};
+  for (const slot of slots) {
+    if (!map[slot.shopId]) map[slot.shopId] = [];
+    map[slot.shopId].push(slot);
+  }
+  return map;
+}
+
+const timeSlotMap = buildTimeSlotMap(timetable);
 
 export default function ShopsClient() {
   // フィルター状態の管理（初期値: 全て選択）
@@ -56,7 +70,7 @@ export default function ShopsClient() {
       <FilterBar onFilterChange={handleFilterChange} />
 
       {/* 出店者カード一覧 */}
-      <ShopCardList shops={filteredShops} />
+      <ShopCardList shops={filteredShops} timeSlotMap={timeSlotMap} />
     </SectionContainer>
   );
 }

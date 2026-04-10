@@ -1,4 +1,5 @@
 import type { Shop } from '@/data/shops';
+import type { TimeSlot } from '@/data/timetable';
 import ShopCard from '@/components/shops/ShopCard/ShopCard';
 import styles from './ShopCardList.module.css';
 
@@ -11,6 +12,8 @@ import styles from './ShopCardList.module.css';
 interface ShopCardListProps {
   /** 表示する出店者の配列 */
   shops: Shop[];
+  /** shopId → タイムスロット配列のマップ */
+  timeSlotMap?: Record<string, TimeSlot[]>;
 }
 
 /**
@@ -18,7 +21,7 @@ interface ShopCardListProps {
  * - デスクトップ3列、タブレット2列、モバイル1列のグリッドレイアウト
  * - 該当なしの場合はメッセージを表示
  */
-export default function ShopCardList({ shops }: ShopCardListProps) {
+export default function ShopCardList({ shops, timeSlotMap }: ShopCardListProps) {
   // 該当する出店者がない場合のメッセージ表示
   if (shops.length === 0) {
     return (
@@ -31,7 +34,7 @@ export default function ShopCardList({ shops }: ShopCardListProps) {
   return (
     <div className={styles.grid}>
       {shops.map((shop) => (
-        <ShopCard key={shop.id} shop={shop} />
+        <ShopCard key={shop.id} shop={shop} timeSlots={timeSlotMap?.[shop.id]} />
       ))}
     </div>
   );

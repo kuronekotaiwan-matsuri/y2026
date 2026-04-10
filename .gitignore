@@ -1,6 +1,9 @@
 # dependencies
 /node_modules
 
+# mcp config (contains secrets)
+.mcp.json
+
 # next.js
 /.next/
 
@@ -23,3 +26,4 @@ next-env.d.ts
 
 tmp/
 
+credentials/
