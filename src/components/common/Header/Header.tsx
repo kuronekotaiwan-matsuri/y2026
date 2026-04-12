@@ -10,6 +10,7 @@ const navLinks = [
   { href: "/shops", label: "出店情報" },
   { href: "/timetable", label: "タイムテーブル" },
   { href: "/about", label: "黒猫台湾まつりについて" },
+  { href: "/press", label: "メディア" },
   { href: "/contact-us", label: "お問合せ" },
 ] as const;
 

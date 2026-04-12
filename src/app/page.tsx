@@ -69,11 +69,17 @@ const jsonLd = {
     {
       '@type': 'Organization',
       name: '二子大通り商和会',
+      url: 'https://kuroneko-douhua.com/',
     },
   ],
   sponsor: {
     '@type': 'GovernmentOrganization',
     name: '川崎市高津区役所',
+    url: 'https://www.city.kawasaki.jp/takatsu/',
+  },
+  performer: {
+    '@type': 'PerformingGroup',
+    name: '出演者（後日発表）',
   },
   offers: {
     '@type': 'Offer',
@@ -83,7 +89,6 @@ const jsonLd = {
     url: `${SITE_URL}/`,
     validFrom: '2025-12-01T00:00:00+09:00',
   },
-  // TODO(27w.23): 出演者確定後にperformerプロパティを追加
 };
 
 /**
