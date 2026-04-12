@@ -77,10 +77,16 @@ const jsonLd = {
     name: '川崎市高津区役所',
     url: 'https://www.city.kawasaki.jp/takatsu/',
   },
-  performer: {
-    '@type': 'PerformingGroup',
-    name: '出演者（後日発表）',
-  },
+  performer: [
+    { '@type': 'Person', name: '佐々木千絵' },
+    { '@type': 'Person', name: '門司紀子' },
+    { '@type': 'Person', name: '佐野いくみ（喜々台湾）' },
+    { '@type': 'Person', name: '石井由紀子（你你好好）' },
+    { '@type': 'Person', name: '小伶＆ROMY（Howto Taiwan）' },
+    { '@type': 'Person', name: '竹内将子（好玩電台）' },
+    { '@type': 'PerformingGroup', name: 'young donuts' },
+    { '@type': 'Person', name: '洸美' },
+  ],
   offers: {
     '@type': 'Offer',
     price: '0',
