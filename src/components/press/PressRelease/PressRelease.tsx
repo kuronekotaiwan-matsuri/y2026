@@ -59,7 +59,16 @@ export default function PressRelease() {
             </div>
             <div className={styles.detailItem}>
               <dt className={styles.detailLabel}>公式サイト</dt>
-              <dd className={styles.detailValue}>（確定次第追記）</dd>
+              <dd className={styles.detailValue}>
+                <a
+                  href="https://kuronekotaiwan-matsuri.github.io/y2026/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.link}
+                >
+                  https://kuronekotaiwan-matsuri.github.io/y2026/
+                </a>
+              </dd>
             </div>
             <div className={styles.detailItem}>
               <dt className={styles.detailLabel}>Instagram</dt>
@@ -75,8 +84,22 @@ export default function PressRelease() {
               </dd>
             </div>
             <div className={styles.detailItem}>
+              <dt className={styles.detailLabel}>主催</dt>
+              <dd className={styles.detailValue}>
+                黒猫台湾まつり実行委員会（二子大通り商和会／まちの企画室）
+              </dd>
+            </div>
+            <div className={styles.detailItem}>
+              <dt className={styles.detailLabel}>協力</dt>
+              <dd className={styles.detailValue}>
+                二子新地駅前通り松栄会
+              </dd>
+            </div>
+            <div className={styles.detailItem}>
               <dt className={styles.detailLabel}>後援</dt>
-              <dd className={styles.detailValue}>（確定次第追記）</dd>
+              <dd className={styles.detailValue}>
+                川崎市／川崎市高津区役所
+              </dd>
             </div>
           </dl>
         </div>
@@ -121,7 +144,7 @@ export default function PressRelease() {
               kuronekotaiwan.matsuri@gmail.com
             </a>
           </p>
-          <p className={styles.paragraph}>広報担当:（確定次第追記）</p>
+          <p className={styles.paragraph}>広報担当: 黒猫台湾まつり実行委員 池田</p>
         </div>
 
         {/* 素材提供 */}
