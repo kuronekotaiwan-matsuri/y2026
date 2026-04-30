@@ -103,14 +103,14 @@ export default function EventInfoSection() {
               href="/y2026/flyer/flyer-2026-front.pdf"
               external
             >
-              チラシ表 &#x2B07;
+              チラシ（表） &#x2B07;
             </Button>
             <Button
               variant="secondary"
               href="/y2026/flyer/flyer-2026-back.pdf"
               external
             >
-              会場マップ（裏） &#x2B07;
+              チラシ（裏） &#x2B07;
             </Button>
           </div>
         </div>
