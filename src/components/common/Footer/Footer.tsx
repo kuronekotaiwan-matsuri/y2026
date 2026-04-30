@@ -2,7 +2,7 @@ import Link from "next/link";
 import styles from "./Footer.module.css";
 
 /** サイトの最終更新日（手動更新） */
-const LAST_UPDATED = "2026-04-08";
+const LAST_UPDATED = "2026-04-30";
 
 /** フッターに表示するサイト内リンクの定義 */
 const footerLinks = [
