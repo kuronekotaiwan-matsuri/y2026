@@ -14,7 +14,8 @@ const GOOGLE_CALENDAR_URL =
   '&location=' + encodeURIComponent('神奈川県川崎市高津区 大山街道（二子新地駅徒歩5分）');
 
 /** Google Maps のリンク */
-const GOOGLE_MAPS_URL = 'https://maps.app.goo.gl/e7weFDGfBXgvQXca8';
+const GOOGLE_MAPS_URL =
+  'https://www.google.com/maps/d/edit?mid=1KbGoKJO7FHHM2dcmUZ0XpOAWMx8K5Ck&usp=sharing';
 
 /**
  * ヒーローセクション

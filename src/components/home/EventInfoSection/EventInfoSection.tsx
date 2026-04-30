@@ -8,7 +8,7 @@ import styles from './EventInfoSection.module.css';
 
 /** Google Maps のリンク（総合案内・メイン会場） */
 const GOOGLE_MAPS_URL =
-  'https://maps.app.goo.gl/e7weFDGfBXgvQXca8';
+  'https://www.google.com/maps/d/edit?mid=1KbGoKJO7FHHM2dcmUZ0XpOAWMx8K5Ck&usp=sharing';
 
 /**
  * 開催情報セクション
