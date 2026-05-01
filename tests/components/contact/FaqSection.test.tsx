@@ -29,8 +29,18 @@ describe('FaqSection コンポーネント', () => {
   // --- 全ての回答テキストがDOM内に存在する ---
   test('全ての回答テキストがDOM内に存在する', () => {
     faqItems.forEach((item) => {
-      expect(screen.getByText(item.answer)).toBeInTheDocument();
+      if (typeof item.answer === 'string') {
+        expect(screen.getByText(item.answer)).toBeInTheDocument();
+      }
     });
+  });
+
+  // --- トイレ回答内のチラシリンク ---
+  test('トイレ回答にチラシPDFへのリンクが含まれる', () => {
+    const link = screen.getByRole('link', { name: 'チラシ' });
+    expect(link).toHaveAttribute('href', '/y2026/flyer/flyer-2026-front.pdf');
+    expect(link).toHaveAttribute('target', '_blank');
+    expect(link).toHaveAttribute('rel', 'noopener noreferrer');
   });
 
   // --- クリックで回答が表示される ---

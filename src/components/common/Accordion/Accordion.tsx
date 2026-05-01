@@ -1,14 +1,14 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, type ReactNode } from 'react';
 import styles from './Accordion.module.css';
 
 /** アコーディオンの各項目の型定義 */
 interface AccordionItem {
   /** 質問テキスト */
   question: string;
-  /** 回答テキスト */
-  answer: string;
+  /** 回答（テキストまたはJSX） */
+  answer: ReactNode;
 }
 
 /** Accordion コンポーネントの props 定義 */

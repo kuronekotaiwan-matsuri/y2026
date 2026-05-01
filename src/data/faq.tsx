@@ -1,9 +1,11 @@
+import type { ReactNode } from 'react';
+
 /** FAQの各項目の型定義 */
 export interface FaqItem {
   /** 質問テキスト */
   question: string;
-  /** 回答テキスト */
-  answer: string;
+  /** 回答（テキストまたはJSX） */
+  answer: ReactNode;
 }
 
 /** よくある質問データ */
@@ -26,7 +28,7 @@ export const faqItems: FaqItem[] = [
   {
     question: '飲食物の持ち込みはできますか？',
     answer:
-      'イベントエリア内では出店者の商品をお楽しみください。飲料の持ち込みは可能です。',
+      '持ち込みも可能ですが、せっかくの機会ですのでぜひ会場の出店者の料理やドリンクをお楽しみいただけると嬉しいです。',
   },
   {
     question: 'ペットを連れて行けますか？',
@@ -35,12 +37,23 @@ export const faqItems: FaqItem[] = [
   },
   {
     question: 'トイレはありますか？',
-    answer:
-      '仮設トイレを設置予定です。また、近隣の公共施設もご利用いただけます。',
+    answer: (
+      <>
+        イベントに参加しているお店や近隣の公共施設をご利用いただけます。詳しくは
+        <a
+          href="/y2026/flyer/flyer-2026-front.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          チラシ
+        </a>
+        をご覧ください。
+      </>
+    ),
   },
   {
     question: 'ワークショップの予約方法は？',
     answer:
-      '一部のワークショップは事前予約制です。詳しくは公式Instagramをご確認ください。',
+      '一部のワークショップは事前予約制です。各出店者のインスタグラムからお申込みください。',
   },
 ];

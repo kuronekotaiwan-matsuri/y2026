@@ -73,3 +73,9 @@
   line-height: var(--line-height-body);
   font-size: var(--font-size-base);
 }
+
+/* 回答テキスト内のリンク */
+.answer a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
