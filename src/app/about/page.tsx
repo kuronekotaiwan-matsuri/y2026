@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import PurposeSection from '@/components/about/PurposeSection/PurposeSection';
 import HighlightsSection from '@/components/about/HighlightsSection/HighlightsSection';
 import GallerySection from '@/components/about/GallerySection/GallerySection';
+import JoinUsSection from '@/components/about/JoinUsSection/JoinUsSection';
 
 /** ページメタデータ */
 export const metadata: Metadata = {
@@ -35,6 +36,9 @@ export default function AboutPage() {
 
       {/* 過去の開催風景セクション */}
       <GallerySection />
+
+      {/* 一緒に作りませんか？（ボランティア募集）セクション */}
+      <JoinUsSection />
     </>
   );
 }

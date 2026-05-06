@@ -1,0 +1,66 @@
+/* ==============================================
+   JoinUsSection - 一緒に作りませんか？セクション
+   ============================================== */
+
+/* リード文: セクションの「呼びかけ」を強調するための太め・やや大きめテキスト */
+.lead {
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-heading);
+  line-height: var(--line-height-body);
+  color: var(--color-primary);
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto calc(var(--spacing-unit) * 3);
+}
+
+/* 本文: 読みやすさを重視し、最大幅で1行の文字数を制御 */
+.body {
+  font-size: 1rem;
+  line-height: var(--line-height-body);
+  color: var(--color-text);
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto calc(var(--spacing-unit) * 5);
+}
+
+/* CTAボタンのラッパー: 中央配置と十分な余白 */
+.ctaWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: calc(var(--spacing-unit) * 3);
+}
+
+/* 補足文: 控えめに、小さめテキスト */
+.note {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-body);
+  color: var(--color-text-light);
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* ==============================================
+   モバイル対応: 余白とフォントサイズを最適化
+   ============================================== */
+@media (max-width: 768px) {
+  .lead {
+    font-size: 1.125rem;
+    margin-bottom: calc(var(--spacing-unit) * 2.5);
+  }
+
+  .body {
+    font-size: 0.9375rem;
+    text-align: left;
+    margin-bottom: calc(var(--spacing-unit) * 4);
+  }
+
+  /* モバイルでもCTAが押しやすいよう、タップ領域を確保 */
+  .ctaWrapper > * {
+    min-height: 48px;
+    padding: 14px 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
