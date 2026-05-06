@@ -15,15 +15,15 @@ describe('FaqSection コンポーネント', () => {
     ).toBeInTheDocument();
   });
 
-  // --- 7つの質問が全てレンダリングされる ---
-  test('7つの質問テキストが全て表示される', () => {
+  // --- 8つの質問が全てレンダリングされる ---
+  test('8つの質問テキストが全て表示される', () => {
     faqItems.forEach((item) => {
       expect(screen.getByText(item.question)).toBeInTheDocument();
     });
   });
 
-  test('FAQデータは7件である', () => {
-    expect(faqItems).toHaveLength(7);
+  test('FAQデータは8件である', () => {
+    expect(faqItems).toHaveLength(8);
   });
 
   // --- 全ての回答テキストがDOM内に存在する ---
@@ -63,6 +63,14 @@ describe('FaqSection コンポーネント', () => {
   // --- 各質問にボタンが存在する ---
   test('各質問はbutton要素としてレンダリングされる', () => {
     const buttons = screen.getAllByRole('button');
-    expect(buttons).toHaveLength(7);
+    expect(buttons).toHaveLength(8);
+  });
+
+  // --- ボランティア募集回答内のフォームリンク ---
+  test('ボランティア募集回答にGoogleフォームへのリンクが含まれる', () => {
+    const link = screen.getByRole('link', { name: 'ボランティア募集フォーム' });
+    expect(link).toHaveAttribute('href', 'https://forms.gle/ppvScJQS9vJk3PiM8');
+    expect(link).toHaveAttribute('target', '_blank');
+    expect(link).toHaveAttribute('rel', 'noopener noreferrer');
   });
 });
