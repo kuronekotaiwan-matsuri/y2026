@@ -60,7 +60,23 @@
       "Bash(gh api:*)",
       "Bash(gh run:*)",
       "Bash(mv \"20260406表_2026黒猫_A3二つ折り.pdf\" flyer-2026-front.pdf)",
-      "Bash(mv \"20260406_裏_2026_黒猫まつり_A3二つ折り .pdf\" flyer-2026-back.pdf)"
+      "Bash(mv \"20260406_裏_2026_黒猫まつり_A3二つ折り .pdf\" flyer-2026-back.pdf)",
+      "WebFetch(domain:github.com)",
+      "mcp__google-analytics__get_report",
+      "mcp__gsc__list_sites",
+      "mcp__gsc__list_sitemaps",
+      "mcp__gsc__search_analytics",
+      "Bash(npx lighthouse:*)",
+      "WebFetch(domain:search.google.com)",
+      "WebSearch",
+      "mcp__gsc__index_inspect",
+      "Bash(Select-String -Pattern \"Tests:|Test Suites:|FAIL|PASS\")",
+      "Bash(Select-Object -First 60)",
+      "Bash(Remove-Item *)"
     ]
-  }
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "google-analytics"
+  ]
 }
