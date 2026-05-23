@@ -1,4 +1,4 @@
 :HL["/y2026/_next/static/chunks/eda587e3f9476287.css","style"]
 :HL["/y2026/_next/static/chunks/bbf1daf95075bfd1.css","style"]
 :HL["https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700&display=swap","style"]
-0:{"buildId":"F0HLQmiVACdZO5rV2lM07","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"shops","paramType":null,"paramKey":"shops","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"VNBUCWnO2IQ3GQwT3cpu6","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"shops","paramType":null,"paramKey":"shops","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
