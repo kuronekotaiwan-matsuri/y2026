@@ -1,0 +1,87 @@
+/* ==============================================
+   ClosingNotice コンポーネントのスタイル
+   - 開催終了のお礼 + 2027年公式サイトへの誘導バナー
+   - ヘッダー直下に全ページ共通で表示
+   ============================================== */
+
+.notice {
+  background-color: var(--color-accent);
+  color: var(--color-text);
+  padding: calc(var(--spacing-unit) * 2) var(--spacing-content);
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* バナー内部のレイアウト */
+.inner {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(var(--spacing-unit) * 1);
+  text-align: center;
+}
+
+/* 開催終了 + お礼 */
+.message {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.strong {
+  display: inline-block;
+  margin-right: calc(var(--spacing-unit) * 0.5);
+}
+
+/* 次回のご案内 */
+.next {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* 2027年公式サイトへのリンク（ピル型ボタン） */
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: calc(var(--spacing-unit) * 0.5);
+  padding: 8px 20px;
+  background-color: var(--color-text);
+  color: #FFFFFF;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: var(--border-radius-button);
+  white-space: nowrap;
+  transition:
+    opacity var(--transition-speed) ease,
+    box-shadow var(--transition-speed) ease;
+}
+
+@media (hover: hover) {
+  .link:hover {
+    opacity: 0.85;
+    box-shadow: var(--shadow-hover);
+  }
+}
+
+.link:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.link:active {
+  transform: scale(0.98);
+}
+
+/* スクリーンリーダー専用テキスト */
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

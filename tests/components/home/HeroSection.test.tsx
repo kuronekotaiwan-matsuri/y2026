@@ -15,25 +15,44 @@ describe('HeroSection コンポーネント', () => {
     expect(heading).toBeInTheDocument();
   });
 
-  // --- キャッチコピーの表示 ---
-  test('キャッチコピーが表示される', () => {
+  // --- 開催終了の表示 ---
+  test('開催終了のバッジが表示される', () => {
     expect(
-      screen.getByText('台湾の街角が、川崎にやってくる。')
+      screen.getByText('2026年の開催は終了しました')
     ).toBeInTheDocument();
   });
 
-  // --- 開催日時の表示 ---
-  test('開催日時が表示される', () => {
+  // --- お礼の表示 ---
+  test('ご来場へのお礼が表示される', () => {
+    expect(
+      screen.getByText('ご来場ありがとうございました。')
+    ).toBeInTheDocument();
+  });
+
+  // --- 開催日の記録 ---
+  test('開催日が表示される', () => {
     expect(
       screen.getByText(/2026年5月30日\(土\)・31日\(日\)/)
     ).toBeInTheDocument();
-    expect(screen.getByText(/11:00〜17:00/)).toBeInTheDocument();
   });
 
-  // --- CTAボタンの表示とリンク先 ---
-  test('CTAボタン「出店情報をみる」が /shops へのリンクとして表示される', () => {
-    const ctaLink = screen.getByRole('link', { name: '出店情報をみる' });
-    expect(ctaLink).toBeInTheDocument();
-    expect(ctaLink).toHaveAttribute('href', '/shops');
+  // --- 2027年サイトへの誘導 ---
+  test('CTAボタンが2027年公式サイトへの外部リンクとして表示される', () => {
+    const ctaLink = screen.getByRole('link', {
+      name: /黒猫台湾まつり2027 公式サイトをみる/,
+    });
+    expect(ctaLink).toHaveAttribute(
+      'href',
+      'https://kuronekotaiwan-matsuri.github.io/y2027/'
+    );
+    expect(ctaLink).toHaveAttribute('target', '_blank');
+    expect(ctaLink).toHaveAttribute('rel', 'noopener noreferrer');
+  });
+
+  // --- 開催前向けCTAの撤去 ---
+  test('開催終了のため「予定に入れる」ボタンは表示されない', () => {
+    expect(
+      screen.queryByRole('link', { name: /予定に入れる/ })
+    ).not.toBeInTheDocument();
   });
 });

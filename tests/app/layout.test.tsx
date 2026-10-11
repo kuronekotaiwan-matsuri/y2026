@@ -52,6 +52,28 @@ describe("RootLayout コンポーネント", () => {
     ).toBeInTheDocument();
   });
 
+  // 開催終了のお知らせが全ページ共通で表示されること
+  it("開催終了のお知らせ（2027年サイトへの誘導）がレンダリングされる", () => {
+    render(
+      <RootLayout>
+        <div>テストコンテンツ</div>
+      </RootLayout>
+    );
+
+    const notice = screen.getByRole("complementary", {
+      name: "開催終了のお知らせ",
+    });
+    expect(notice).toBeInTheDocument();
+
+    const link = screen.getByRole("link", {
+      name: /黒猫台湾まつり2027 公式サイトへ/,
+    });
+    expect(link).toHaveAttribute(
+      "href",
+      "https://kuronekotaiwan-matsuri.github.io/y2027/"
+    );
+  });
+
   // children が正しくレンダリングされること
   it("children が main 要素内にレンダリングされる", () => {
     render(

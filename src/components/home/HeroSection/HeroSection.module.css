@@ -20,45 +20,47 @@
   width: 100%;
 }
 
+/* 開催終了バッジ */
+.statusBadge {
+  display: inline-block;
+  background-color: var(--color-text);
+  color: #FFFFFF;
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-heading);
+  letter-spacing: 0.05em;
+  padding: calc(var(--spacing-unit) * 0.5) calc(var(--spacing-unit) * 2);
+  border-radius: var(--border-radius-button);
+  margin-bottom: calc(var(--spacing-unit) * 2);
+}
+
 /* イベント名 */
 .title {
   color: var(--color-primary);
   margin-bottom: calc(var(--spacing-unit) * 2);
 }
 
-/* キャッチコピー */
+/* お礼のメッセージ */
 .catchcopy {
   font-size: var(--font-size-h3);
   color: var(--color-text);
-  margin-bottom: calc(var(--spacing-unit) * 1);
+  margin-bottom: calc(var(--spacing-unit) * 2);
   font-weight: var(--font-weight-heading);
 }
 
-/* サブキャッチ */
-.subCatch {
+/* お礼の本文 */
+.thanks {
   font-size: 1rem;
-  color: var(--color-text-light);
-  margin-bottom: calc(var(--spacing-unit) * 3);
+  color: var(--color-text);
+  max-width: 600px;
+  margin: 0 auto calc(var(--spacing-unit) * 3);
 }
 
-/* 開催情報のミニリスト */
-.factList {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto calc(var(--spacing-unit) * 4);
-  max-width: 480px;
-  text-align: left;
-  display: inline-block;
-}
-
-.factList li {
-  display: flex;
-  align-items: center;
-  gap: calc(var(--spacing-unit) * 1);
+/* 次回のご案内 */
+.nextNote {
   font-size: 1.05rem;
   color: var(--color-text);
-  padding: calc(var(--spacing-unit) * 0.5) 0;
   font-weight: var(--font-weight-heading);
+  margin-bottom: calc(var(--spacing-unit) * 3);
 }
 
 /* CTAボタンラッパー */
@@ -70,7 +72,7 @@
   margin-bottom: calc(var(--spacing-unit) * 3);
 }
 
-/* 信頼バー */
+/* 開催の記録 */
 .trustBar {
   font-size: 0.875rem;
   color: var(--color-text-light);
@@ -92,7 +94,8 @@
     font-size: 1.125rem;
   }
 
-  .date {
-    font-size: 1rem;
+  .thanks,
+  .nextNote {
+    font-size: 0.95rem;
   }
 }

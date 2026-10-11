@@ -3,6 +3,7 @@ import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/common/Header/Header";
 import Footer from "@/components/common/Footer/Footer";
+import ClosingNotice from "@/components/common/ClosingNotice/ClosingNotice";
 
 /** Google Analytics 測定ID */
 const GA_ID = "G-5JW9C3WY72";
@@ -106,6 +107,9 @@ export default function RootLayout({
       <body>
         {/* 共通ヘッダー */}
         <Header />
+
+        {/* 開催終了のお知らせ + 2027年サイトへの誘導（全ページ共通） */}
+        <ClosingNotice />
 
         {/* ページコンテンツ */}
         <main>{children}</main>

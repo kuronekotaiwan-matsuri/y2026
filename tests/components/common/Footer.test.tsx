@@ -48,6 +48,20 @@ describe("Footer コンポーネント", () => {
     ).toBeInTheDocument();
   });
 
+  // 2027年公式サイトへの外部リンクが表示されること
+  it("2027年公式サイトへのリンクが新しいタブで開く外部リンクとして表示される", () => {
+    render(<Footer />);
+    const link = screen.getByRole("link", {
+      name: /黒猫台湾まつり2027 公式サイト/,
+    });
+    expect(link).toHaveAttribute(
+      "href",
+      "https://kuronekotaiwan-matsuri.github.io/y2027/"
+    );
+    expect(link).toHaveAttribute("target", "_blank");
+    expect(link).toHaveAttribute("rel", "noopener noreferrer");
+  });
+
   // footer タグが使用されていること
   it("footer要素でレンダリングされる", () => {
     const { container } = render(<Footer />);

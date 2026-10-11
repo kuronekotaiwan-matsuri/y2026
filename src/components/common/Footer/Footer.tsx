@@ -1,8 +1,9 @@
 import Link from "next/link";
+import { NEXT_EVENT_NAME, NEXT_EVENT_URL } from "@/data/nextEvent";
 import styles from "./Footer.module.css";
 
 /** サイトの最終更新日（手動更新） */
-const LAST_UPDATED = "2026-04-30";
+const LAST_UPDATED = "2026-10-11";
 
 /** フッターに表示するサイト内リンクの定義 */
 const footerLinks = [
@@ -16,9 +17,33 @@ const footerLinks = [
 /** ボランティア募集フォーム（外部リンク） */
 const VOLUNTEER_FORM_URL = "https://forms.gle/ppvScJQS9vJk3PiM8";
 
+/** 外部リンク用アイコン（新しいタブで開くことを示す） */
+function ExternalIcon() {
+  return (
+    <svg
+      className={styles.externalIcon}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      width="14"
+      height="14"
+      aria-hidden="true"
+    >
+      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+      <polyline points="15 3 21 3 21 9" />
+      <line x1="10" y1="14" x2="21" y2="3" />
+    </svg>
+  );
+}
+
 /**
  * Footer コンポーネント
  * - サイト内リンク一覧
+ * - 次回（2027年）公式サイト・ボランティア募集への外部リンク
  * - 著作権表記
  * - レスポンシブ: モバイルではリンクを縦並び、デスクトップでは横並び
  */
@@ -39,6 +64,19 @@ export default function Footer() {
                 </Link>
               </li>
             ))}
+            {/* 次回（2027年）公式サイト（外部リンク） */}
+            <li className={styles.linkItem}>
+              <a
+                href={NEXT_EVENT_URL}
+                className={styles.externalLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {NEXT_EVENT_NAME} 公式サイト
+                <ExternalIcon />
+                <span className={styles.srOnly}>（新しいタブで開きます）</span>
+              </a>
+            </li>
             {/* ボランティア募集（外部リンク: Google Form） */}
             <li className={styles.linkItem}>
               <a
@@ -48,23 +86,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
               >
                 ボランティア募集
-                <svg
-                  className={styles.externalIcon}
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  width="14"
-                  height="14"
-                  aria-hidden="true"
-                >
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                  <polyline points="15 3 21 3 21 9" />
-                  <line x1="10" y1="14" x2="21" y2="3" />
-                </svg>
+                <ExternalIcon />
                 <span className={styles.srOnly}>（新しいタブで開きます）</span>
               </a>
             </li>
