@@ -1,4 +1,7 @@
 {
-  "database": "beads.db",
-  "jsonl_export": "issues.jsonl"
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "embedded",
+  "dolt_database": "kuroneko_taiwan_2026_20260318",
+  "project_id": "6c377c94-dfdc-4639-85d0-532af12906a8"
 }
